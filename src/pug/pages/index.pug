@@ -1,0 +1,137 @@
+extends ../layouts/default.pug
+
+block config
+
+    //- Global Page Configuration
+    - var pageTitle = 'Wing Health'
+
+
+block content
+
+    //- * * * * * * * *
+    //- * * Navbar  * *
+    //- * * * * * * * *
+    include mixins/navbar.pug
+    +navbar({
+        navbarBg: 'bg-white',
+        navbarStyle: 'navbar-light',
+        navbarBrandColor: 'navbar-dark',
+        navbarBtnColor: 'btn-primary',
+        navbarContainer: 'container'
+    })
+
+    //- * * * * * * * * * *
+    //- * * Page Header * *
+    //- * * * * * * * * * *
+
+    include mixins/header.pug
+    +header({
+        pageHeaderBg: 'bg-white',
+        pageHeaderStyle: 'page-header-white',
+        svgBorderFill: 'text-dark'
+    })
+        .page-header-content
+            .container
+                .row.align-items-center
+                    .col-lg-7
+                        h1.page-header-title Hyperlocalized telehealth
+                        p.page-header-text.mb-5 Wing Health enables individuals to connect with telehealth care professionals in their neighborhoods, towns and cities
+
+                    .col-lg-5
+                        img.img-fluid(src='assets/img/svgs/drawkit-list-app-colour.svg')
+
+
+
+    include mixins/header.pug
+    +header({
+
+        pageHeaderStyle: 'page-header-dark',
+        sectionPadding: 'py-1   ',
+        svgBorderRounded: false,
+        svgBorderWaves: false,
+        svgBorderFill: 'text-white'
+    })
+
+        .container
+            .container
+                .row.align-items-center
+                    .col-lg-5
+                        img.img-fluid(src='assets/img/svgs/holding-phone-colour.svg').mb-5
+                    .col-lg-7
+                        h1.page-header-title For individuals, discover high quality local virtual care
+                        p.page-header-text Connect with health care professionals in your area. Schedule a virtual appointment while at home and talk over messaging, phone and video calls. Pay with Medicare, Medicaid or private insurance
+
+                .mt-5.text-center
+                    a.btn.btn-teal.btn-marketing.rounded-pill(href='individual.html') For individuals
+
+
+    include mixins/header.pug
+    +header({
+
+        pageHeaderStyle: 'page-header-white',
+        sectionPadding: 'py-1   ',
+        svgBorderRounded: false,
+        svgBorderWaves: false,
+        svgBorderFill: 'text-white'
+    })
+
+        .container
+            .container
+                .row.align-items-center
+                    .col-lg-5
+                        img.img-fluid(src='assets/img/svgs/remote-work-man.svg').mb-5
+                    .col-lg-7
+                        h1.page-header-title For providers, opportunity is local and virtual 
+                        p.page-header-text.mb-5 Wing Health makes it easy for providers to connect with new and existing individuals in their communities
+                        
+            .row.pt-4
+                .col-lg-4.mb-5.mb-lg-0
+                    .card.h-100
+                        .card-body.p-5
+                            .text-center
+                                   .h1 Easy visits
+                                   .p Wing Health schedules visits and facilitates billing
+                
+                .col-lg-4.mb-5.mb-lg-0
+                    .card.h-100
+                        .card-body.p-5
+                            .text-center
+                                   .h1 Bill Medicare, Medicaid and private insurers
+                                   .p New rules have expanded what can be reimbursed 
+
+                .col-lg-4.mb-5.mb-lg-0
+                    .card.h-100
+                        .card-body.p-5
+                            .text-center
+                                   .h1 Community first
+                                   .p We are comitted to providing a high quality experience for FQHCs and the communities they serve
+
+            .mt-5.text-center
+                a.btn.btn-teal.btn-marketing.rounded-pill(href='provider.html') For providers
+
+    //- include mixins/header.pug
+    //- +header({
+
+    //-     pageHeaderStyle: 'page-header-dark',
+    //-     sectionPadding: 'py-1'
+    //- })
+
+
+
+
+block footer
+
+    include mixins/footer.pug
+    +footer({
+        footerBg: 'bg-dark',
+        footerStyle: 'footer-dark'
+    })
+
+append scripts
+    script(src='https://unpkg.com/aos@next/dist/aos.js')
+    script.
+        AOS.init({
+            disable: 'mobile',
+            duration: 600,
+            once: true
+        });
