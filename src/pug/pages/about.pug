@@ -1,0 +1,78 @@
+extends ../layouts/default.pug
+
+block config
+
+    //- Global Page Configuration
+    - var pageTitle = 'Wing Health'
+
+
+block content
+
+    //- * * * * * * * *
+    //- * * Navbar  * *
+    //- * * * * * * * *
+    include mixins/navbar.pug
+    +navbar({
+        navbarBg: 'bg-white',
+        navbarStyle: 'navbar-light',
+        navbarBrandColor: 'text-dark',
+        navbarBtnColor: 'btn-primary',
+        navbarContainer: 'container'
+    })
+
+
+
+    include mixins/header.pug
+    +header({
+        pageHeaderBg: 'bg-white',
+        pageHeaderStyle: 'page-header-white',
+        svgBorderFill: 'text-dark'
+    })
+
+        .page-header-content
+            .container
+                .row.align-items-center
+                    .col-lg-8
+                        h1.page-header-title About us
+                        p.page-header-text.md-5.pt-4 Wing Health was founded at the <a href="https://www.youtube.com/watch?v=S_VjyVsAQhY&feature=emb_title"> MIT COVID-19 Challenge - Beat The Pandemic</a>. 1500 participants and 250 mentors from around the world came together to help tackle some of the most pressing issues arising from the COVID-19 pandemic. Our pitch was selected as a top team for the track focusing on new ways to deliver care in a COVID-19 world. 
+                        h1.page-header-title.pt-4 Founders
+                        p.page-header-text.md-5.pt-4 Stephen Grinich. Experience developing impactful telemedicine solutions at scale at 98point6 and Amwell (previously Avizia, Carena). Health care and digital health innovation at UCSF Innovation Ventures. Computer science, mathematics and health economics at Carleton College. 
+                        p.page-header-text.md-5 Jinsy Jacob, MD, MBA. Medical Director of Innovation at Nevada Health Centers. Experience with launching and growing a successful telemedicine program at Nevada Health Centers.
+                        //- p.page-header-text.md-5 Nikhil Yedulla, MD Candidate. Pursuing medical degree at Wayne State University School of Medicine Experience with telehealth research at Henry Ford Health System and medtech commercialization as CMO of Surgicure Technologies. Biological science and Economics at Wayne State University
+                        h1.page-header-title.pt-4 Mission
+                        p.page-header-text.md-5.pt-4 We believe health care is delivered best when it reflects the unique and diverse needs of the communities served, and that individuals recieve the best care from professionals in their neighborhoods, towns and cities. Our mission at Wing Health is to connect patients with local and trusted providers offering telehealth. 
+            
+
+                //- .row.align-items-center
+                //-     .col-lg-8
+                //-         h1.page-header-title.pt-4 Team
+                //-         p.page-header-text.md-5.pt-4 Stephen Grinich, CEO and Founder. Experience developing impactful telemedicine solutions at scale at 98point6 and Amwell (previously Avizia, Carena). Health care and digital health innovation at UCSF Innovation Ventures. Computer science, mathematics and health economics at Carleton College. 
+                //-         p.page-header-text.md-5 Jinsy Jacob, MD, MBA. Medical Director of Innovation at Nevada Health Centers. Experience with launching and growing a successful telemedicine program at Nevada Health Centers.
+                //-         p.page-header-text.md-5 Nikhil Yedulla, MD Candidate. Pursuing medical degree at Wayne State University School of Medicine Experience with telehealth research at Henry Ford Health System and medtech commercialization as CMO of Surgicure Technologies. Biological science and Economics at Wayne State University
+                //-         h1.page-header-title.pt-4 Mission
+                //-         p.page-header-text.md-5.pt-4 We believe health care is best when provided hyperlocally. Individuals who receive the best care from professionals in their neighborhoods, towns and cities will connect with providers that reflect the unique and diverse neeeds of the communities they serve. We stand to enable 
+
+
+                //- .row.align-items-center
+                //-     .col-lg-12.text-center
+                //-         h1 Questions about insurance or payments?
+                //-         h1 Reach out to our Care Coordination team at <a href="tel:(415) 413-7136‬">(415) 413-7136</a> or <a href="mailto:contact@wing.health‬">contact@wing.health</a>
+
+            
+
+block footer
+
+    include mixins/footer.pug
+    +footer({
+        footerBg: 'bg-dark',
+        footerStyle: 'footer-dark'
+    })
+
+append scripts
+    script(src='https://unpkg.com/aos@next/dist/aos.js')
+    script.
+        AOS.init({
+            disable: 'mobile',
+            duration: 600,
+            once: true
+        });
