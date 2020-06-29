@@ -1,0 +1,197 @@
+extends ../layouts/default.pug
+
+block config
+
+    //- Global Page Configuration
+    - var pageTitle = 'Wing Health'
+
+
+block content
+
+    //- * * * * * * * *
+    //- * * Navbar  * *
+    //- * * * * * * * *
+    include mixins/navbar.pug
+    +navbar({
+        navbarBg: 'bg-white',
+        navbarStyle: 'navbar-light',
+        navbarBrandColor: 'text-dark',
+        navbarBtnColor: 'btn-primary',
+        navbarContainer: 'container'
+    })
+
+
+    include mixins/header.pug
+    +header({
+        svgBorderFill: 'text-dark',
+        pageHeaderBg: 'bg-white',
+        pageHeaderStyle: 'page-header-white'
+    })
+
+        //- .page-header-content.pt-4
+        //-     .container.pt-4
+        //-         .row.align-items-center.text-center.pt-4
+        //-             .col-lg-12
+        //-                 h1 Start connecting with local health care professionals 
+        //-         .row.align-items-center.pt-4
+        //-             .col-lg-2
+        //-             .col-lg-8
+        //-                 <!-- Begin Mailchimp Signup Form --> <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css"> <style type="text/css"> #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; } /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block. We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */ </style> <div id="mc_embed_signup"> <form action="https://health.us19.list-manage.com/subscribe/post?u=60f25dc9e60410744bfbf2f9c&amp;id=170a42c8da" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate> <div id="mc_embed_signup_scroll"> <div class="mc-field-group"> <label for="mce-FNAME">First Name </label> <input type="text" value="" name="FNAME" class="required" id="mce-FNAME"> </div> <div class="mc-field-group"> <label for="mce-LNAME">Last Name </label> <input type="text" value="" name="LNAME" class="required" id="mce-LNAME"> </div> <div class="mc-field-group"> <label for="mce-MMERGE5">What type of care are you seeking? </label> <input type="text" value="" name="MMERGE5" class="required" id="mce-MMERGE5"> </div> <div class="mc-field-group"> <label for="mce-EMAIL">Email Address </label> <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL"> </div> <div class="mc-field-group size1of2"> <label for="mce-MMERGE6">Phone Number </label> <input type="text" name="MMERGE6" class="required" value="" id="mce-MMERGE6"> </div> <div id="mce-responses" class="clear"> <div class="response" id="mce-error-response" style="display:none"></div> <div class="response" id="mce-success-response" style="display:none"></div> </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--> <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_60f25dc9e60410744bfbf2f9c_170a42c8da" tabindex="-1" value=""></div> <div class="clear"><input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe"  class="btn btn-teal btn-marketing rounded-pill"></div> </div> </form> </div> <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[5]='MMERGE5';ftypes[5]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[6]='MMERGE6';ftypes[6]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script> <!--End mc_embed_signup-->
+        .page-header-content
+            .container
+                .row.align-items-center.text-center.pt-4
+                    .col-lg-12
+                        h1.page-header-title Learn about our SMS text assistant
+                        p.text-dark.pt-4 A Wing Health representitive will reach out to see how we can bring our automated assitant to your health center and patients
+
+                .row.align-items-center.pt-4
+                    .col-lg-2
+                    .col-lg-8
+                        <!-- Begin Mailchimp Signup Form --> <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css"> <style type="text/css"> #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; } /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block. We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */ </style> <div id="mc_embed_signup"> <form action="https://health.us19.list-manage.com/subscribe/post?u=60f25dc9e60410744bfbf2f9c&amp;id=170a42c8da" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate> <div id="mc_embed_signup_scroll"> <div class="indicates-required"><span class="asterisk">*</span> indicates required</div> <div class="mc-field-group"> <label for="mce-FNAME">First Name  <span class="asterisk">*</span> </label> <input type="text" value="" name="FNAME" class="required" id="mce-FNAME"> </div> <div class="mc-field-group"> <label for="mce-LNAME">Last Name  <span class="asterisk">*</span> </label> <input type="text" value="" name="LNAME" class="required" id="mce-LNAME"> </div> <div class="mc-field-group"> <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span> </label> <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL"> </div> <div class="mc-field-group size1of2"> <label for="mce-MMERGE6">Phone Number  <span class="asterisk">*</span> </label> <input type="text" name="MMERGE6" class="required" value="" id="mce-MMERGE6"> </div> <div class="mc-field-group"> <label for="mce-MMERGE3">What is your health center?  <span class="asterisk">*</span> </label> <input type="text" value="" name="MMERGE3" class="required" id="mce-MMERGE3"> </div> <div id="mce-responses" class="clear"> <div class="response" id="mce-error-response" style="display:none"></div> <div class="response" id="mce-success-response" style="display:none"></div> </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--> <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_60f25dc9e60410744bfbf2f9c_170a42c8da" tabindex="-1" value=""></div> <div class="clear"><input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="button"></div> </div> </form> </div> <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[6]='MMERGE6';ftypes[6]='phone';fnames[3]='MMERGE3';ftypes[3]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script> <!--End mc_embed_signup-->
+
+
+                //- .row.align-items-center.text-center.pt-4
+                //-     .col-lg-12
+                //-         h1.page-header-title Community health centers
+                //-         p San Francisco clinics now offering virtual care
+
+                //- .row.pt-4.text-center.pt-4
+                //-     .col-lg-4.mb-5.mb-lg-0
+                //-         .card.h-100
+                //-             .card-body.p-5
+                //-                     img.img-fluid(src='assets/img/cliniclogos/baart.png', height="100px")        
+                //-                     .h1 BAART Community HealthCare                                    
+                //-                     //- .p.text-dark.pt-4 (415) 863-3883
+                //-                     a(href='https://www.baarthealthcare.org/', target ="_blank").pt-4 baarthealthcare.org
+                //-                     .p.text-dark.pt-4 
+                //-                     a.btn.btn-teal.btn-marketing.rounded-pill(href='baart.html') Book now
+                //-     .col-lg-4.mb-5.mb-lg-0
+                //-         .card.h-100
+                //-             .card-body.p-5
+                //-                     img.img-fluid(src='assets/img/cliniclogos/curry.jpg',  height="100px")        
+                //-                     .h1.pt-4 Curry Senior Center
+                //-                     //- .p.text-dark.pt-4 (415) 920-1351
+                //-                     a(href='https://curryseniorcenter.org/', target ="_blank").pt-4 curryseniorcenter.org
+                //-                     .p.text-dark.pt-4 
+                //-                     a.btn.btn-teal.btn-marketing.rounded-pill(href='curry.html') Book now
+
+                //-     .col-lg-4.mb-5.mb-lg-0
+                //-         .card.h-100
+                //-             .card-body.p-5
+                //-                 .text-center
+                //-                     img.img-fluid(src='assets/img/cliniclogos/360.png', height="100px")        
+                //-                     .h1.pt-4 HealthRIGHT 360
+                //-                     //- .p.text-dark.pt-4 (415) 487-5638
+                //-                     a(href='http://www.healthright360.org', target ="_blank").pt-4 healthright360.org
+                //-                     .p.text-dark.pt-4 
+                //-                     a.btn.btn-teal.btn-marketing.rounded-pill(href='healthright360.html') Book now
+
+                //- .row.pt-4.text-center.pt-4
+                //-     .col-lg-4.mb-5.mb-lg-0
+                //-         .card.h-100
+                //-             .card-body.p-5
+                //-                     img.img-fluid(src='assets/img/cliniclogos/mnhc.png', height="100px")        
+                //-                     .h1.pt-4 Mission Neighborhood Health Center
+                //-                     //- .p.text-dark.pt-4 (415) 552-1013
+                //-                     a(href='http://www.mnhc.org/', target ="_blank").pt-4 mnhc.org
+                //-                     .p.text-dark.pt-4 
+                //-                     a.btn.btn-teal.btn-marketing.rounded-pill(href='mnhc.html') Book now
+
+                //-     .col-lg-4.mb-5.mb-lg-0
+                //-         .card.h-100
+                //-             .card-body.p-5
+                //-                 .text-center
+                //-                     img.img-fluid(src='assets/img/cliniclogos/native.png', height="100px")        
+                //-                     .h1.pt-4 Native American Health Center
+                //-                     //- .p.text-dark.pt-4 (415) 621-8051
+                //-                     a(href='http://www.nativehealth.org/', target ="_blank").pt-4 nativehealth.org
+                //-                     .p.text-dark.pt-4 
+                //-                     a.btn.btn-teal.btn-marketing.rounded-pill(href='nativehealth.html') Book now
+
+                //-     .col-lg-4.mb-5.mb-lg-0
+                //-         .card.h-100
+                //-             .card-body.p-5
+                //-                     img.img-fluid(src='assets/img/cliniclogos/nems.png', height="100px")        
+                //-                     .h1.pt-4 North East Medical Services
+                //-                     //- .p.text-dark.pt-4 (415) 391-9686
+                //-                     a(href='http://www.nems.org/', target ="_blank").pt-4 nems.org
+                //-                     .p.text-dark.pt-4 
+                //-                     a.btn.btn-teal.btn-marketing.rounded-pill(href='nems.html') Book now
+
+                //- .row.pt-4.text-center.pt-4
+                //-     .col-lg-4.mb-5.mb-lg-0
+                //-         .card.h-100
+                //-             .card-body.p-5
+                //-                     img.img-fluid(src='assets/img/cliniclogos/pp.png', height="100px")                                    
+                //-                     .h1.pt-4 Planned Parenthood Northern California
+                //-                     //- .p.text-dark.pt-4 (415) 821-1282
+                //-                     a(href='https://www.plannedparenthood.org/planned-parenthood-northern-california', target ="_blank").pt-4 plannedparenthood.org
+                //-                     .p.text-dark.pt-4 
+                //-                     a.btn.btn-teal.btn-marketing.rounded-pill(href='pp.html') Book now
+
+                //-     .col-lg-4.mb-5.mb-lg-0
+                //-         .card.h-100
+                //-             .card-body.p-5
+                //-                     img.img-fluid(src='assets/img/cliniclogos/sfchc.jpg', height="100px")                                    
+                //-                     .h1.pt-4 San Francisco Community Health Center
+                //-                     //- .p.text-dark.pt-4 (415) 292-3400
+                //-                     a(href='https://www.sfcommunityhealth.org/', target ="_blank").pt-4 sfcommunityhealth.org
+                //-                     .p.text-dark.pt-4 
+                //-                     a.btn.btn-teal.btn-marketing.rounded-pill(href='sfchc.html') Book now
+
+                //-     .col-lg-4.mb-5.mb-lg-0
+                //-         .card.h-100
+                //-             .card-body.p-5
+                //-                     img.img-fluid(src='assets/img/cliniclogos/sffc.png', height="100px")                                    
+                //-                     .h1.pt-4 San Francisco Free Clinic
+                //-                     //- .p.text-dark.pt-4 (415) 750-9894
+                //-                     a(href='https://sffc.org/', target ="_blank").pt-4 sffc.org
+                //-                     .p.text-dark.pt-4 
+                //-                     a.btn.btn-teal.btn-marketing.rounded-pill(href='sffc.html') Book now
+
+                //- .row.pt-4.text-center.pt-4
+                //-     .col-lg-4.mb-5.mb-lg-0
+                //-         .card.h-100
+                //-             .card-body.p-5
+                //-                     img.img-fluid(src='assets/img/cliniclogos/soma.jpg', height="100px")                                    
+                //-                     .h1.pt-4 South of Market Health Center
+                //-                     //- .p.text-dark.pt-4 (415) 503-6000
+                //-                     a(href='http://smhcsf.org/', target ="_blank").pt-4 smhcsf.org
+                //-                     .p.text-dark.pt-4 
+                //-                     a.btn.btn-teal.btn-marketing.rounded-pill(href='soma.html') Book now
+
+                //-     .col-lg-4.mb-5.mb-lg-0
+                //-         .card.h-100
+                //-             .card-body.p-5
+                //-                     img.img-fluid(src='assets/img/cliniclogos/stanthony.png', height="100px")                                    
+                //-                     .h1.pt-4 St. Anthony Medical Clinic
+                //-                     //- .p.text-dark.pt-4 (415) 241-8320
+                //-                     a(href='https://www.stanthonysf.org/', target ="_blank").pt-4 stanthonysf.org
+                //-                     .p.text-dark.pt-4 
+                //-                     a.btn.btn-teal.btn-marketing.rounded-pill(href='stanthony.html') Book now
+
+                    //- .col-lg-4.mb-5.mb-lg-0
+                    //-     .card.h-100
+                    //-         .card-body.p-5
+                    //-                 .h1 Street Outreach Services
+                    //-                 .p.text-dark (415) 355-2250
+                    //-                 a(href='https://www.facebook.com/SOS.VETSOS', target ="_blank").pt-4 Facebook page
+
+        
+
+block footer
+
+    include mixins/footer.pug
+    +footer({
+        footerBg: 'bg-dark',
+        footerStyle: 'footer-dark'
+    })
+
+append scripts
+    script(src='https://unpkg.com/aos@next/dist/aos.js')
+    script.
+        AOS.init({
+            disable: 'mobile',
+            duration: 600,
+            once: true
+        });

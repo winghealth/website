@@ -11,17 +11,20 @@ mixin navbar(options)
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
             #navbarSupportedContent.collapse.navbar-collapse
                 ul.navbar-nav.ml-auto.mr-lg-
+                    //- li.nav-item
+                    //-     a.nav-link(href='individual.html')
+                    //-         | For individuals
                     li.nav-item
-                        a.nav-link(href='individual.html')
-                            | For individuals
-                    li.nav-item
-                        a.nav-link(href='provider.html')
-                            | For providers
+                        a.nav-link(href='features.html')
+                            | Features
+                    //- li.nav-item
+                    //-     a.nav-link(href='provider.html')
+                    //-         | For providers
                     li.nav-item
                         a.nav-link(href='about.html')
                             | About us
                     li.nav-item
                         a.nav-link(href='contact.html')
                             | Contact
-                a(href="find-a-clinic.html").btn.btn-teal.rounded-pill.px-4.ml-lg-4
-                    | Book a visit
+                a(href="schedule-demo.html").btn.btn-teal.rounded-pill.px-4.ml-lg-4
+                    | Schedule demo
