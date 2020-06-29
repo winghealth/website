@@ -34,17 +34,21 @@ block content
             .container
                 .row.align-items-center
                     .col-lg-7
-                        h1.page-header-title Virtual care with a nearby health professional
-                        p.page-header-text.mb-5 Wing Health is your personal guide to accessing local telehealth offerings
-                        a.btn.btn-teal.btn-marketing.rounded-pill(href='find-a-clinic.html') Book a visit
+                        h1.page-header-title SMS text onboarding to virtual care
+                        p.page-header-text.mb-5 The Wing Health assistant connects individuals to your nearby virtual care offering and the resources needed for connectivity and communication
+                        .container            
+                            .row.align-items-center
+                                .col-lg-6
+                                    a.btn.btn-teal.btn-marketing.rounded-pill(href='features.html') See Features
+                                .col-lg-6
+                                    a.btn.btn-teal.btn-marketing.rounded-pill(href='see-demo.html') Schedule demo 
                     .col-lg-5
-                        img.img-fluid(src='assets/img/svgs/drawkit-list-app-colour.svg')
+                        img.img-fluid(src='assets/img/screenshot-sms/speak-english.png')
 
-
+                    .container.pt-5
 
     include mixins/header.pug
     +header({
-
         pageHeaderStyle: 'page-header-dark',
         sectionPadding: 'py-1   ',
         svgBorderRounded: false,
@@ -57,16 +61,14 @@ block content
                 .col-lg-5
                     img.img-fluid(src='assets/img/svgs/holding-phone-colour.svg').mb-5
                 .col-lg-7
-                    h1.page-header-title For individuals, discover high quality, local virtual care
-                    p.page-header-text Use Wing Health to connect with health care professionals in your area. We match you with a local physician and guide you to the resources you need to access virtual offerings
+                    h1.page-header-title Wing Health addresses inequity in access to virtual care 
+                    p.page-header-text The Wing Health assistant connects patients to nearby affordable devices, WIFI access hotspots, affordable data plans, multi-language onboarding and more to enable access to virtual care
 
             .mt-5.text-center
-                a.btn.btn-teal.btn-marketing.rounded-pill(href='individual.html') For individuals
-
+                a.btn.btn-teal.btn-marketing.rounded-pill(href='features.html') Features
 
     include mixins/header.pug
     +header({
-
         pageHeaderStyle: 'page-header-white',
         sectionPadding: 'py-1   ',
         svgBorderRounded: false,
@@ -79,44 +81,31 @@ block content
                 .col-lg-5
                     img.img-fluid(src='assets/img/svgs/remote-work-man.svg').mb-5
                 .col-lg-7
-                    h1.page-header-title For providers, opportunity is local and virtual 
-                    p.page-header-text.mb-5 Wing Health makes it easy to connect with new and existing individuals in your nearby community
-                        
-            //- .row.pt-4
-            //-     .col-lg-4.mb-5.mb-lg-0
-            //-         .card.h-100
-            //-             .card-body.p-5
-            //-                 .text-center
-            //-                        .h1 Easy visits
-            //-                        .p Wing Health schedules visits and facilitates billing
-                
-            //-     .col-lg-4.mb-5.mb-lg-0
-            //-         .card.h-100
-            //-             .card-body.p-5
-            //-                 .text-center
-            //-                        .h1 Bill Medicare, Medicaid and private insurers
-            //-                        .p New rules have expanded what can be reimbursed 
-
-            //-     .col-lg-4.mb-5.mb-lg-0
-            //-         .card.h-100
-            //-             .card-body.p-5
-            //-                 .text-center
-            //-                        .h1 Community first
-            //-                        .p We are comitted to providing a high quality experience for FQHCs and the communities they serve
+                    h1.page-header-title Expand your reach and onboard patients to virtual care
+                    p.page-header-text.mb-5 Wing Health makes it easy reach patients where they are over SMS. We connect individuals to local resources for digital access, then connect them to you for virtual care appointments
 
             .mt-5.text-center
                 a.btn.btn-teal.btn-marketing.rounded-pill(href='provider.html') For providers
-                
 
     //- include mixins/header.pug
     //- +header({
-
-    //-     pageHeaderStyle: 'page-header-dark',
-    //-     sectionPadding: 'py-1'
+    //-     pageHeaderStyle: 'page-header-white',
+    //-     sectionPadding: 'py-1   ',
+    //-     svgBorderRounded: false,
+    //-     svgBorderWaves: false,
+    //-     svgBorderFill: 'text-white'
     //- })
 
+    //-     .container
+    //-         .row.align-items-center
+    //-             .col-lg-5
+    //-                 img.img-fluid(src='assets/img/svgs/holding-phone-colour.svg').mb-5
+    //-             .col-lg-7
+    //-                 h1.page-header-title For individuals, connect with virtual care physicians and resources to meet them
+    //-                 p.page-header-text Text your center's assistant to learn about affordable devices, WIFI access hotspots, affordable data plans and schedule appointments with your health center
 
-
+    //-         .mt-5.text-center
+    //-             a.btn.btn-teal.btn-marketing.rounded-pill(href='individual.html') For individuals
 
 block footer
 
