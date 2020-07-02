@@ -3,7 +3,7 @@ extends ../layouts/default.pug
 block config
 
     //- Global Page Configuration
-    - var pageTitle = 'Wing Health'
+    - var pageTitle = 'Wing'
 
 
 block content
@@ -34,8 +34,8 @@ block content
             .container
                 .row.align-items-center
                     .col-lg-7
-                        h1.page-header-title SMS text onboarding to virtual care
-                        p.page-header-text.mb-5 The Wing Health assistant connects individuals to your nearby virtual care offering and the resources needed for connectivity and communication
+                        h1.page-header-title Text message onboarding to virtual care
+                        p.page-header-text.mb-5 Connecting patients to your virtual clinic and the digital resources needed to access virtual care
                         .row.align-items-center
                             .col-lg-6.pt-4
                                 a.btn.btn-teal.btn-marketing.rounded-pill(href='features.html') See Features
@@ -45,6 +45,19 @@ block content
                         img.img-fluid(src='assets/img/screenshot-sms/speak-english.png')
 
                     .container.pt-5
+
+
+            .container            
+                .row.align-items-center
+                    .col-lg-6
+                        img.img-fluid(src='assets/img/covid-challenge.png').mb-5
+                    .col-lg-6
+                        img.img-fluid(src='assets/img/ucsf-hackathon.jpeg').mb-5
+                .row.align-items-center
+                    .col-lg-6
+                        img.img-fluid(src='assets/img/stanfordrebuild.png').mb-5
+                    .col-lg-6
+                        img.img-fluid(src='assets/img/sling-health.png').mb-5
 
     include mixins/header.pug
     +header({
@@ -60,8 +73,8 @@ block content
                 .col-lg-5
                     img.img-fluid(src='assets/img/svgs/holding-phone-colour.svg').mb-5
                 .col-lg-7
-                    h1.page-header-title Wing Health addresses inequity in access to virtual care 
-                    p.page-header-text The Wing Health assistant connects patients to nearby affordable devices, WIFI access hotspots, affordable data plans, multi-language onboarding and more to enable access to virtual care
+                    h1.page-header-title Wing connects patients to nearby computers, tablets, smartphones, affordable cellular data plans and home WIFI options
+                    p.page-header-text 
 
             .mt-5.text-center
                 a.btn.btn-teal.btn-marketing.rounded-pill(href='features.html') Features
@@ -80,8 +93,7 @@ block content
                 .col-lg-5
                     img.img-fluid(src='assets/img/svgs/remote-work-man.svg').mb-5
                 .col-lg-7
-                    h1.page-header-title Expand your reach and onboard patients to virtual care
-                    p.page-header-text.mb-5 Wing Health makes it easy reach patients where they are over SMS. We connect individuals to local resources for digital access, then connect them to you for virtual care appointments
+                    h1.page-header-title Wing reaches patients where they are over text in English and Spanish to share resources and schedule appointments
 
             .mt-5.text-center
                 a.btn.btn-teal.btn-marketing.rounded-pill(href='features.html') Features
